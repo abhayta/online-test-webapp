@@ -14,10 +14,10 @@ def exam():
 
     
 
-    name = input("Please enter your name to start the test ?", type ="text")
+    name = input("Please enter your name to start the test.", type ="text")
 
 
-    q1 = radio("Q1. Base language of web?",['javaScript','ASP','PHP','HTML'])
+    q1 = radio("Q1.Which of the following is the Base language of web?",['javaScript','ASP','PHP','HTML'])
     if q1 =='HTML':
         c+=1
 
@@ -38,9 +38,9 @@ def exam():
         c+=1
 
     if c>3:
-        style(put_text("Congratulations, " + name + ", your score is "+ str(c)),'color:green')
+        style(put_text("Congratulations!, " + name + ", your score is "+ str(c)),'color:green')
         style(put_text("Result : PASSED"),'color:green')
-        put_text("Thank You for your participation..")
+        put_text("Thank You for your participation.")
 
     else:
         style(put_text("Oops!, " +name + ", your score is "+ str(c)),'color:red')
